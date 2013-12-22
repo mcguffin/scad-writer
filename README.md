@@ -35,7 +35,7 @@ use <writer.scad>;
 // import font
 include <fonts/default_font.scad>;
 
-write("Some Text",default_font);
+write("Hello World",default_font);
 ```
 ![](examples/general.png)
 
@@ -84,12 +84,13 @@ Note: There is some ASCII-Art in /fonts/kim.scad.
 
 
 ###Defining Fonts###
-As a best practice you should only specify one font per file and name the variable after the file's name.
-
 A font is just a vector containing all glyphs. 
-Take a look at the example:
+As a best practice you should only specify one font per file and name the variable after the file's name.
+So, assuming your font's name is "foobar" you should create a file named `fonts/foobar.scad` and name the variale as well `foobar`.
+
+Okay ... less talking, more example:
 ```
-// File `myfont.scad`:
+// File `fonts/myfont.scad`:
 myfont = [
 	[ "A",
 		[
