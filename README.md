@@ -97,7 +97,7 @@ A font is just a vector containing all glyphs.
 As a best practice you should only specify one font per file and name the variable after the file's name.
 So, assuming your font's name is "foobar" you should create a file named `fonts/foobar.scad` and name the variale as well `foobar`.
 
-Okay ... less talking, more example:
+Okay ... less talk, more code:
 ```
 // File `fonts/myfont.scad`:
 myfont = [
