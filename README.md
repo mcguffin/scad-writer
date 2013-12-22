@@ -81,4 +81,34 @@ Have a look in /fonts/kim.scad.
 
 
 ###Defining Fonts###
-Fonts are defined as 
+As a best practice you should only specify one font per file and name the variable after the file's name.
+
+A font is just a vector containing all glyphs. 
+have a look on the example:
+```
+// File `myfont.scad`:
+myfont = [
+	[ "A",
+		[
+		"     ",
+		" 11  ",
+		"1  1 ",
+		"1111 ",
+		"1  1 ",
+		"     ",
+		],
+	],
+	[ "B",
+		[
+		"111  ",
+		"1  1 ",
+		"111  ",
+		"1  1 ",
+		"111  ",
+		"     ",
+		],
+	],
+	// and so on ... many many letters.
+];
+// EOF myfont.scad
+```
