@@ -64,6 +64,8 @@ write( unicode_text , default_font , center=true );
 ![](examples/unicode.png)
 
 ####Playing around with pixel sigifiers####
+Make a printing plate out of some ASCII-Art.
+
 ```
 use <../writer.scad>;
 include <../fonts/kim.scad>;
@@ -77,14 +79,15 @@ for( pix=[[".",1],["-",2],["+",3],["=",4],["E",5],["#",6]] )
 ```
 ![](examples/pixel-signifier.png)
 
-Have a look in /fonts/kim.scad.
+Note: There is some ASCII-Art in /fonts/kim.scad.
+
 
 
 ###Defining Fonts###
 As a best practice you should only specify one font per file and name the variable after the file's name.
 
 A font is just a vector containing all glyphs. 
-have a look on the example:
+Take a look at the example:
 ```
 // File `myfont.scad`:
 myfont = [
