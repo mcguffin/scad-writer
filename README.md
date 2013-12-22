@@ -39,6 +39,16 @@ write("Hello World",default_font);
 ```
 ![](examples/general.png)
 
+####Write with child objects####
+```
+use <../writer.scad>;
+include <../fonts/default_font.scad>;
+
+write("Some Text",default_font,center=true)
+	cylinder(r=6,h=2);
+```
+![](examples/use-child.png)
+
 ####Sizing####
 ```
 use <../writer.scad>;
@@ -51,16 +61,6 @@ translate([0,-40,0])
 		cube([6,2,1]);
 ```
 ![](examples/sizing.png)
-
-####Write with child objects####
-```
-use <../writer.scad>;
-include <../fonts/default_font.scad>;
-
-write("Some Text",default_font,center=true)
-	cylinder(r=6,h=2);
-```
-![](examples/use-child.png)
 
 ####Multibyte Characters####
 ```
@@ -79,13 +79,16 @@ Make a printing plate out of some ASCII-Art.
 ```
 use <../writer.scad>;
 include <../fonts/kim.scad>;
+include <../fonts/default_font.scad>;
 
 
 for( pix=[[".",1],["-",2],["+",3],["=",4],["E",5],["#",6]] )
 	write("?",kim,center=true,size=[7,7,1],pixel_signifier=pix[0])
 		cylinder(r=pix[1],h=1,$fn=4);
 
-// visit http://dresdencodak.com/
+translate([0,-310,0])
+	write("dresdencodak.com",default_font,size=[7,7,1],center=true)
+		cube([7,5,1]);
 ```
 ![](examples/pixel-signifier.png)
 
