@@ -72,10 +72,13 @@ include <../fonts/kim.scad>;
 for( pix=[[".",1],["-",2],["+",3],["=",4],["E",5],["#",6]] )
 	write("?",kim,center=true,size=[7,7,1],pixel_signifier=pix[0])
 		cylinder(r=pix[1],h=1,$fn=4);
+
+// visit http://dresdencodak.com/
 ```
 ![](examples/pixel-signifier.png)
 
+Have a look in /fonts/kim.scad.
 
 
 ###Defining Fonts###
-
+Fonts are defined as 
