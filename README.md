@@ -1,6 +1,6 @@
 ##OpenSCAD Writer##
 
-Write Text with pixel based fonts in OpenSCAD.
+Write Text with pixel based fonts in [OpenSCAD](http://www.openscad.org/).
 
 ###Usage###
 ####Importing####
