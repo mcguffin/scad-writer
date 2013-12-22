@@ -37,7 +37,7 @@ include <fonts/default_font.scad>;
 
 write("Some Text",default_font);
 ```
-(examples/general.png)
+![](examples/general.png)
 
 ####Sizing####
 
@@ -50,7 +50,7 @@ include <../fonts/default_font.scad>;
 write("Some Text",default_font,center=true)
 	cylinder(r=6,h=2);
 ```
-(examples/use-child.png)
+![](examples/use-child.png)
 
 ####Multibyte Characters####
 ```
@@ -61,7 +61,7 @@ unicode_text = ["›","U","n","i","c","o","d","e","™","‹"];
 
 write( unicode_text , default_font , center=true );
 ```
-(examples/unicode.png)
+![](examples/unicode.png)
 
 ####Playing around with pixel sigifiers####
 ```
@@ -73,7 +73,7 @@ for( pix=[[".",1],["-",2],["+",3],["=",4],["E",5],["#",6]] )
 	write("?",kim,center=true,size=[7,7,1],pixel_signifier=pix[0])
 		cylinder(r=pix[1],h=1,$fn=4);
 ```
-(examples/pixel-signifier.png)
+![](examples/pixel-signifier.png)
 
 
 
