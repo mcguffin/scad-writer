@@ -92,10 +92,6 @@ translate([0,-310,0])
 ```
 ![](examples/pixel-signifier.png)
 
-Note: There is some ASCII-Art in /fonts/kim.scad.
-
-
-
 ###Defining Fonts###
 A font is just a vector containing all glyphs. 
 As a best practice you should only specify one font per file and name the variable after the file's name.
