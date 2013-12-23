@@ -24,7 +24,7 @@ write( text, font, size=[10,10,1] , center=false , pixel_signifier = "1" , fallb
 - `font`: The font vector. Should match the vector specified in yout font file.
 - `size`: Size vector. Specifies width and height of the pixel matrix to use. Will also be used 
 - `center`: Boolean. Center the text object.
-- `pixel_signifier`: Which character in your font definition is marking a pixel.
+- `pixel_signifier`: Which character in your font definition is marking a pixel. 
 - `fallback_char`: Which character to display, if the actual char is not found in font definition
 
 ###Examples###
